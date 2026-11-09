@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Learn Programming Languages</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header class="hero">
+  <h1>One idea, many languages.</h1>
+  <p>Learn how programming languages work by reading the same idea written in each one. Pick a language below, then work through variables, decisions, loops and functions.</p>
+  <div class="chips" id="heroChips" role="group" aria-label="Show hello world in"></div>
+  <div class="demo">
+    <pre id="heroCode" aria-live="polite"></pre>
+    <div class="bar"><span>Prints: Hello, world!</span><span id="heroRun"></span></div>
+  </div>
+</header>
+
+<section class="learn" id="learn">
+  <h2>Start learning</h2>
+  <p class="sub">Choose one language. It is used for the demo at the top, the lessons, and the 15 fundamentals. Your progress is saved in this browser.</p>
+  <div class="chips" id="langTabs" role="tablist" aria-label="Languages"></div>
+
+  <div class="panel">
+    <h3 id="lName"></h3>
+    <dl class="facts">
+      <div><dt>What it is</dt><dd id="lTag"></dd></div>
+      <div><dt>Good for</dt><dd id="lUse"></dd></div>
+      <div><dt>Run a file</dt><dd id="lRun"></dd></div>
+    </dl>
+
+    <div class="topics chips" id="topicTabs" role="tablist" aria-label="Topics"></div>
+    <p class="explain" id="tText"></p>
+    <pre id="tCode"></pre>
+    <div class="row">
+      <button class="done" id="doneBtn" aria-pressed="false">Mark as done</button>
+      <div class="meter" aria-hidden="true"><i id="bar"></i></div>
+      <span id="count"></span>
+    </div>
+
+    <div class="quiz">
+      <h4 id="qText"></h4>
+      <div class="opts" id="qOpts"></div>
+      <p class="msg" id="qMsg" role="status"></p>
+    </div>
+  </div>
+</section>
+
+<section class="learn" id="fundamentals">
+  <h2>The 15 fundamentals</h2>
+  <p class="sub">Every programmer needs these, in any language. Your chosen language is used for every example. Open each one, read it, and mark it done. The explanations mention Python words like def and try, so use the code to see the keywords your language uses.</p>
+  <div class="row"><div class="meter" aria-hidden="true"><i id="fBar"></i></div><span id="fCount"></span></div>
+  <div class="chips" id="fLang" role="group" aria-label="Example language" style="margin-top:16px"></div>
+  <div class="fund" id="fund"></div>
+</section>
+
+<section class="learn">
+  <h2>Where to begin</h2>
+  <div class="path">
+    <div><b>Your first language</b><span>Python or JavaScript. Both read almost like plain English.</span></div>
+    <div><b>Websites</b><span>HTML, CSS, then JavaScript. Add PHP for the server side.</span></div>
+    <div><b>Apps and games</b><span>Java or C# for apps and Unity, C++ for engines.</span></div>
+    <div><b>Fast, safe systems</b><span>Go for servers, Rust for low-level code without crashes.</span></div>
+  </div>
+  <footer>Tip: type each example yourself instead of copying it. Change a value, run it, and see what happens.</footer>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
